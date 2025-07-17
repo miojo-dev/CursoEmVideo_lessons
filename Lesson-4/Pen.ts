@@ -34,38 +34,40 @@ namespace CursoEmVideo_lessons.Lesson_2 {
             }
         }
 
-        //Setters
         public static modelSetter(pen: string) {
           this.model = pen; 
+          return console.log("model = ${model}")
         }
         public static colorSetter(pen: string) {
-          this.color = pen; 
+            this.color = pen;
+            return console.log("color = ${color}")
         }
-        public static hargeSetter(pen: number) {
+        public static chargeSetter(pen: number) {
             this.int = pen;
+            return console.log("charge = ${charge}")
         }
         public static pointSetter(pen: number) {
             this.double = pen;
+            return console.log("point = ${point}")
         }
         public static coveredSetter(pen: boolean) {
             this.bool = pen;
+            return console.log("covered = ${covered}")
         }
-        public static modelGetter(pen: string) {
-            this.string = pen;
+        public static modelGetter() {
+            return console.log("model = ${model}")
         }
-        public static colorGetter(pen: string) {
-            this.string = pen;
+        public static colorGetter() {
+            return console.log("color = ${color}")
         }
-        public static hargeGetter(pen: number) {
-            this.int = pen;
+        public static chargeGetter() {
+            return console.log("charge = ${charge}")
         }
-        public static pointGetter(pen: number) {
-            this.double = pen;
+        public static pointGetter() {
+            return console.log("point = ${point}")
         }
-        public static coveredGetter(pen: boolean) {
-            this.boolean = pen;
+        public static coveredGetter() {
+            return console.log("covered = ${covered}")
         }
-        public static Cover() {} covered = true;
-        public static uncover() {} covered = false;
     }
 }

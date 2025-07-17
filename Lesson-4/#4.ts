@@ -32,12 +32,17 @@ namespace CursoEmVideo_lessons.Lesson_4 {
                 model, color, charge, point, covered
             );
             
-            _4.AccessActions();
-            
-        }
+            Pen2.modelGetter();
+            Pen2.colorGetter();
+            Pen2.chargeGetter();
+            Pen2.pointGetter();
+            Pen2.coveredGetter();
 
-        public static AccessActions() {
-
+            Pen2.modelSetter();
+            Pen2.colorSetter();
+            Pen2.chargeSetter();
+            Pen2.pointSetter();
+            Pen2.coveredSetter();
         }
     }
 }
