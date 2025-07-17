@@ -11,7 +11,7 @@ namespace CursoEmVideo_lessons.Lesson_5 {
 
         public openAcc (t: string) {
             this.setType(t);
-            this.setStatus(true)
+            this.setStatus(true);
             if (t = "cc") {
                 this.setBalance(50);
             } else if (t = "cp") {
@@ -55,22 +55,27 @@ namespace CursoEmVideo_lessons.Lesson_5 {
         }
 
         public payMonthlyFee () {
-            fee: Number;
+            let fee: number = 0;
             if (this.type = "cc") {
-                let fee = 12;
+                fee = 12;
             } else if (this.type = "cp") {
-                let fee = 20;
+                fee = 20;
             }
-            
+            if (this.status = true) {
+                if (this.balance >= fee) {
+                    this.setBalance(this.getBalance() - fee);
+                } else {
+                    console.error("You don't have enough money");
+                }
+            } else {
+                console.error("Error! Invalid account");
+            }
         }
 
         //Special methods
         
         //Constructor
-        public constructor () {
-            this.balance = 0;
-            this.status = false;
-        }
+        public constructor () {this.balance = 0, this.status = false;}
 
         //Getters
         public getNumAcc = () => this.numAcc;

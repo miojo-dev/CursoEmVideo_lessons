@@ -1,5 +1,3 @@
-import * as Pen from 'Pen.ts';
-
 namespace CursoEmVideo_lessons.Lesson_2{
     class _2
     {
@@ -12,7 +10,7 @@ namespace CursoEmVideo_lessons.Lesson_2{
             console.log("Here you can create a Pen object!");
             
             
-            Pen1: new Pen(
+            const Pen1: Pen = new Pen(
                 model,
                 color,
                 charge,
@@ -20,11 +18,11 @@ namespace CursoEmVideo_lessons.Lesson_2{
                 covered
             );
 
-            Pen.modelSetter(model);
-            Pen.colorSetter(color);
-            Pen.chargeSetter(charge);
-            Pen.pointSetter(point);
-            Pen.coveredSetter(covered);
+            Pen1.modelSetter(model);
+            Pen1.colorSetter(color);
+            Pen1.chargeSetter(charge);
+            Pen1.pointSetter(point);
+            Pen1.coveredSetter(covered);
             
             _2.AccessActions();
             
@@ -39,9 +37,9 @@ namespace CursoEmVideo_lessons.Lesson_2{
                 "\n3 - Doodle" +
                 "\nClose actions"
                 );
-            Pen.Cover();
-            Pen.Uncover();
-            Pen.Doodle();
+            Pen1.cover();
+            Pen1.uncover();
+            Pen1.doodle();
         }
     }
 }

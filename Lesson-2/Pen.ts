@@ -1,5 +1,5 @@
 namespace CursoEmVideo_lessons.Lesson_2 {
-    class Pen {
+    export class Pen {
         model: string; 
         color: string;
         charge: number;
@@ -20,17 +20,17 @@ namespace CursoEmVideo_lessons.Lesson_2 {
             this.covered;
         }
 
-        public Doodle(covered : boolean, charge: number){
-            if (covered == false) {
+        public doodle(){
+            if (this.covered == false) {
                 console.log("Doodle");
-                return charge--;
+                return this.charge--;
             } else {
                 console.log("Error! You must uncover first!");
-                return charge;
+                return this.charge;
             }
         }
 
-        public modelSetter(pen: string) {
+        modelSetter(pen: string) {
             this.model = pen;
         }
         public colorSetter(pen: string) {
@@ -45,10 +45,10 @@ namespace CursoEmVideo_lessons.Lesson_2 {
         public coveredSetter(pen: boolean) {
             this.covered = pen;
         }
-        public Cover() {
+        public cover() {
             this.covered = true;
         }
-        public Uncover() {
+        public uncover() {
             this.covered = false;
         }
     }
