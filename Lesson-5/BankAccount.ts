@@ -23,7 +23,7 @@ namespace CursoEmVideo_lessons.Lesson_5 {
             if (this.balance = 0) {
                 this.setStatus(false);
             } else {
-                console.error("You cannot do this operation now");
+                console.warn("You cannot do this operation now");
             }
         }
 
@@ -31,7 +31,7 @@ namespace CursoEmVideo_lessons.Lesson_5 {
             if (this.status = true) {
                 this.setBalance(this.getBalance() + amount);
             } else {
-                console.error("Error! Invalid account");
+                console.warn("warn! Invalid account");
             }
 
         }
@@ -41,13 +41,13 @@ namespace CursoEmVideo_lessons.Lesson_5 {
                 if (this.balance >= amount) {
                     this.setBalance(this.getBalance() - amount);
                 } else {
-                    console.error (
+                    console.warn (
                         "You don't have enough " +
                         "balance for this withdraw"
                     );
                 }
             } else {
-                console.error(
+                console.warn(
                     "Impossible to withdraw"
                 );
             }
@@ -65,10 +65,10 @@ namespace CursoEmVideo_lessons.Lesson_5 {
                 if (this.balance >= fee) {
                     this.setBalance(this.getBalance() - fee);
                 } else {
-                    console.error("You don't have enough money");
+                    console.warn("You don't have enough money");
                 }
             } else {
-                console.error("Error! Invalid account");
+                console.warn("Error! Invalid account");
             }
         }
 
