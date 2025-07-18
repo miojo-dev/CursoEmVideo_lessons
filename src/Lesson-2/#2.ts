@@ -1,8 +1,11 @@
+import { Pen } from './Pen';
+
 namespace CursoEmVideo_lessons.Lesson_2{
     class _2
     {
         public static Lesson(){
-            let model, color: string = "blue pen";
+            let model: string = "BIC";
+            let color: string = "blue pen";
             let charge: number = 100;
             let point: number = 0.5;
             let covered: boolean = true;

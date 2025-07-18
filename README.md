@@ -1,1 +1,1 @@
-# test temp
+# Test for O.O.P. with TypeScript

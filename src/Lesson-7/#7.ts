@@ -67,12 +67,24 @@ namespace CursoEmVideo_lessons.Lesson_7 {
                 4,
             )
 
-            f1.Introduction();
-            f2.Introduction();
-            f3.Introduction();
-            f4.Introduction();
-            f5.Introduction();
-            f6.Introduction();
+            f[1].Introduction();
+            f[1].status();
+
+            f[2].Introduction();
+            f[2].status();
+
+            f[3].Introduction();
+            f[3].status();
+
+            f[4].Introduction();
+            f[4].status();
+
+            f[5].Introduction();
+            f[5].status();
+
+            f[6].Introduction();
+            f[6].status();
+
 
         }
     }

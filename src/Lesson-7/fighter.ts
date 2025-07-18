@@ -4,8 +4,8 @@ namespace CursoEmVideo_lessons.Lesson_7 {
         private nacionality: string;
         private age: number;
         private height: number;
-        private weight: number;
-        private class: string;
+        private weight!: number;
+        private class!: string;
         private wins: number;
         private loses: number;
         private draw: number;
@@ -13,21 +13,21 @@ namespace CursoEmVideo_lessons.Lesson_7 {
         public Introduction() {
             console.log (
                 "-----${getName()}-----" +
-                "nOrigin: ${getNacionalidade()}" +
-                "n${getAge()} anos" +
-                "n${getHeight()}m" +
-                "nWeigth: ${getWeight()}Kg" +
-                "nWon: ${getWins()}" +
-                "nLose: ${getLoses()}" +
-                "nDraw: ${getDraw()}"
+                "\nOrigin: ${getNacionalidade()}" +
+                "\n${getAge()} anos" +
+                "\n${getHeight()}m" +
+                "\nWeigth: ${getWeight()}Kg" +
+                "\nWon: ${getWins()}" +
+                "\nLose: ${getLoses()}" +
+                "\nDraw: ${getDraw()}"
                 );
         }
         public Status() {
             console.log (
                 "Class: ${getClass()}" +
-                "nWon: ${getWins()}" +
-                "nLose: ${getLoses()}" +
-                "nDraw: ${getDraw()}"
+                "\nWon: ${getWins()}" +
+                "\nLose: ${getLoses()}" +
+                "\nDraw: ${getDraw()}"
                 );
         }
         public WinFight() {
@@ -42,14 +42,14 @@ namespace CursoEmVideo_lessons.Lesson_7 {
 
         //Constructor
         constructor (
-            name,
-            nacionality,
-            age,
-            height,
-            weight,
-            wins,
-            loses,
-            draw,
+            name: string,
+            nacionality: string,
+            age: number,
+            height: number,
+            weight: number,
+            wins: number,
+            loses: number,
+            draw: number,
         ) {
             this.name = name;
             this.nacionality = nacionality;
