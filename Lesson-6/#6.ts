@@ -23,13 +23,13 @@ namespace CursoEmVideo_lessons.Lesson_6 {
             this.playing = false;
         }
 
-        getVolume = () => this.volume;
-        getPower = () => this.power;
-        getPlaying = () => this.playing;
+        private getVolume = () => this.volume;
+        private getPower = () => this.power;
+        private getPlaying = () => this.playing;
     
-        setVolume = (v: number) => this.volume = v;
-        setPower = (v: boolean) => this.power = v;
-        setPlaying = (v: boolean) => this.playing = v;
+        private setVolume = (v: number) => this.volume = v;
+        private setPower = (v: boolean) => this.power = v;
+        private setPlaying = (v: boolean) => this.playing = v;
     
         public on() {
             this.setPower(true);
@@ -46,29 +46,37 @@ namespace CursoEmVideo_lessons.Lesson_6 {
             }
         }
         public closeMenu() {
-            console.log("Closing menu");
+            console.log("Closing menu...");
         }
         public volumeUp() {
-            if (this.power = true) {
-            this.setVolume(this.volume + 5);
+            if (this.getPower()) {
+            this.setVolume(this.getVolume() + 5);
             }
         }
         public volumeDown() {
-            if (this.power = true) {
-            this.setVolume(this.volume - 5);
+            if (this.getPower()) {
+            this.setVolume(this.getVolume() - 5);
             }
         }
         public mute() {
-            this.setVolume(0);
+            if (this.getPower() && this.getVolume() > 0) {
+                this.setVolume(0);
+            }
         }
         public unmute() {
-            this.setVolume(50);
+            if (this.getPower() && this.getVolume() == 0) {
+                this.setVolume(50);
+            }
         }
         public play() {
-            this.setPlaying(true);
+            if (this.getPower() && !(this.getPlaying())) {
+                this.setPlaying(true);
+            }
         }
         public pause() {
-            this.setPlaying(false);
+            if (this.getPower() && (this.getPlaying())) {
+                this.setPlaying(false);
+            }
         }
     }
 }

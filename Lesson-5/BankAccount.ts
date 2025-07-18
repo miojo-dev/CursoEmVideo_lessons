@@ -1,5 +1,5 @@
 namespace CursoEmVideo_lessons.Lesson_5 {
-    class BankAccount {
+    export class BankAccount {
         //Attributes
         public numAcc: number;
         protected type: string;
