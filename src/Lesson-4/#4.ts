@@ -1,6 +1,5 @@
-import * as Pen from 'Pen.ts';
-
 namespace CursoEmVideo_lessons.Lesson_4 {
+
     class _4 {
         public static Lesson() {
             let model: string = "bic";
@@ -28,21 +27,20 @@ namespace CursoEmVideo_lessons.Lesson_4 {
                 "\nNow the code will have those new methods we talked about"
             );
             
-            Pen1: new Pen2 (
+            const teste = new Pen2 (
                 model, color, charge, point, covered
             );
             
-            Pen2.modelGetter();
-            Pen2.colorGetter();
-            Pen2.chargeGetter();
-            Pen2.pointGetter();
-            Pen2.coveredGetter();
+            teste.modelGetter();
+            teste.colorGetter();
+            teste.chargeGetter();
+            teste.pointGetter();
 
-            Pen2.modelSetter();
-            Pen2.colorSetter();
-            Pen2.chargeSetter();
-            Pen2.pointSetter();
-            Pen2.coveredSetter();
+            teste.modelSetter();
+            teste.colorSetter();
+            teste.chargeSetter();
+            teste.pointSetter();
+            teste.coveredSetter();
         }
     }
 }

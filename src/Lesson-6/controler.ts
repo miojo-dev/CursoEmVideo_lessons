@@ -1,5 +1,5 @@
 namespace CursoEmVideo_lessons.Lesson_6 {
-    interface _6 {
+    interface _Controler {
         on(): void;
         off(): void;
         openMenu(): void;
@@ -12,7 +12,7 @@ namespace CursoEmVideo_lessons.Lesson_6 {
         pause(): void;
     }
 
-    export class RemoteControler implements _6 {
+    export class RemoteControler implements _Controler {
         private volume: number;
         private power: boolean;
         private playing: boolean;

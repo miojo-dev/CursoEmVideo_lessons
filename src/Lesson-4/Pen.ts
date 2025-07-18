@@ -1,5 +1,5 @@
 namespace CursoEmVideo_lessons.Lesson_2 {
-    class Pen2 {
+    export class Pen2 {
         model: string; 
         color: string;
         charge: number;
@@ -34,39 +34,39 @@ namespace CursoEmVideo_lessons.Lesson_2 {
             }
         }
 
-        public static modelSetter(pen: string) {
+        public modelSetter(pen: string) {
           this.model = pen; 
           return console.log("model = ${model}")
         }
-        public static colorSetter(pen: string) {
+        public colorSetter(pen: string) {
             this.color = pen;
             return console.log("color = ${color}")
         }
-        public static chargeSetter(pen: number) {
-            this.int = pen;
+        public chargeSetter(pen: number) {
+            this.charge = pen;
             return console.log("charge = ${charge}")
         }
-        public static pointSetter(pen: number) {
-            this.double = pen;
+        public pointSetter(pen: number) {
+            this.point = pen;
             return console.log("point = ${point}")
         }
-        public static coveredSetter(pen: boolean) {
-            this.bool = pen;
+        public coveredSetter(pen: boolean) {
+            this.covered = pen;
             return console.log("covered = ${covered}")
         }
-        public static modelGetter() {
+        public modelGetter() {
             return console.log("model = ${model}")
         }
-        public static colorGetter() {
+        public colorGetter() {
             return console.log("color = ${color}")
         }
-        public static chargeGetter() {
+        public chargeGetter() {
             return console.log("charge = ${charge}")
         }
-        public static pointGetter() {
+        public pointGetter() {
             return console.log("point = ${point}")
         }
-        public static coveredGetter() {
+        public coveredGetter() {
             return console.log("covered = ${covered}")
         }
     }
