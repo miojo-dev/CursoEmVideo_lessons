@@ -1,10 +1,9 @@
 import { Fighter } from './fighter';
 
-
 namespace CursoEmVideo_lessons.Lesson_7 {
     class _7 {
         public Lesson () {
-            const f: Fighter [6]  = new Fighter; 
+            const f: Fighter[]  = []; 
 
             f[0] = new Fighter (
                 "Pretty Boy",
@@ -68,24 +67,22 @@ namespace CursoEmVideo_lessons.Lesson_7 {
             )
 
             f[1].Introduction();
-            f[1].status();
+            f[1].Status();
 
             f[2].Introduction();
-            f[2].status();
+            f[2].Status();
 
             f[3].Introduction();
-            f[3].status();
+            f[3].Status();
 
             f[4].Introduction();
-            f[4].status();
+            f[4].Status();
 
             f[5].Introduction();
-            f[5].status();
+            f[5].Status();
 
             f[6].Introduction();
-            f[6].status();
-
-
+            f[6].Status();
         }
     }
 }
