@@ -1,9 +1,7 @@
-namespace CursoEmVideo_lessons.Lesson_8;
+import { Fighter } from "./fighter";
 
-public class _8
-{
-    public static void Lesson()
-    {
+export class _8 {
+    public Lesson () {
         
     }
 }

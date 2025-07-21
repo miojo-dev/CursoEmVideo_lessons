@@ -1,4 +1,3 @@
-
 export class Fighter {
     private name: string;
     private nacionality: string;
@@ -62,7 +61,7 @@ export class Fighter {
     }
 
     //Getters
-    private getName = () => this.name;
+    public getName = () => this.name;
     private getNacionality = () => this.nacionality;
     private getAge = () => this.age;
     private getHeight = () => this.height;
